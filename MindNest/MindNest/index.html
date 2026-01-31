@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>MindNest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1> 🌱 MindNest</h1>
+    <p class="sub-title"> A place where you put your head in order</p>
+</header>
+
+        <section class="card">
+            <h2>How's going today?</h2>
+            <input type="text" id="today-feel" placeholder="Write how you feel...">
+
+            <h2>What's the plan for today?</h2>
+            <input type="text" id="today-plan" placeholder="What do you need/want to do today">
+        </section>
+
+        <section class="card">
+            <h2> 📓 Diary</h2>
+
+            <label for="mood">Mood</label>
+            <select id="mood">
+                    <option value="">Choose ...</option>
+                    <option value="1">😞 Very Bad</option>
+                    <option value="2">😐 So So</option>
+                    <option value="3">🙂 Good</option>
+                    <option value="4">😄 Very Good!</option>
+            </select>
+            <textarea id="diary-text" rows="4" placeholder="Write something about your day..."></textarea>
+
+            <button id="save-diary">Save</button>
+        </section>
+
+        <section class="card">
+            <h2>✅ To-Do</h2>
+
+            <div class="todo-input">
+                <input type="text" id="todo-text" placeholder="New Activity...">
+                <button id="add-todo">Add</button>
+            </div>
+
+            <ul id="todo-list">
+
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>MindNest - Take care of yourself, one day and another 🌿</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+</html>
